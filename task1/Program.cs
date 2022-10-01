@@ -12,8 +12,6 @@ Console.WriteLine("Введите размер 2го двумерного мас
 int a = int.Parse(Console.ReadLine());
 int[,] arrayTwo = new int[z, a];
 
-int sumElements = (x * y) + (z * a);
-int[] allElements = new int[sumElements];
 int p = 1;
 
 void FillArray(int[,] one)
@@ -22,7 +20,7 @@ void FillArray(int[,] one)
     {
         for (int j = 0; j < one.GetLength(1); j++)
         {
-            one[i, j] = new Random().Next(1, 10);
+            one[i, j] = new Random().Next(1, 5);
         }
     }
 }
